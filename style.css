@@ -126,6 +126,7 @@
 .offer_box_top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .offer_box_top>a {
@@ -200,7 +201,7 @@
     /* filter: brightness(60%); */
     background: url(img/accesories.png);
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
@@ -254,6 +255,17 @@
     height: 581px;
     background: #F8F8F8;
 }
+
+
+/* .foto_item {
+    text-align: center;
+} */
+
+.foto_item_2 {
+    text-align: center;
+    background-color: #F7E4E2;
+}
+
 
 .description_item {
     margin-top: 25px;
