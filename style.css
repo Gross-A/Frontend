@@ -267,8 +267,8 @@ a:-webkit-any-link {
 .transform_box:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .box_for::before {
@@ -966,6 +966,30 @@ a:-webkit-any-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  background: #ffffff;
+}
+
+.filter_input:checked ~ .filter_box_text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px;
+  line-height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter_input:checked ~ .filter_box_text div p {
+  margin-right: 10px;
 }
 
 .prod_add_Cart {
@@ -1459,6 +1483,10 @@ a:-webkit-any-link {
   margin-top: 40px;
 }
 
+.sub_total span {
+  margin-left: 20px;
+}
+
 .grand_total {
   font-weight: 300;
   font-size: 16px;
@@ -1469,6 +1497,7 @@ a:-webkit-any-link {
 
 .grand_total span {
   color: #F16D7F;
+  margin-left: 20px;
 }
 
 .total_line {
